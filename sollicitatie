@@ -1,0 +1,60 @@
+PraktijkErvaring = int(input("Hoeveel jaar praktijkervaring heeft u met dieren-dressuur? "))
+MboDilpoma = str(input("Bent u in bezit van een MBO-4 Diploma ondernemen? "))
+VrachtwagenBewijs = str(input("Bent u in bezit van een geldig Vrachtwagen rijbewijs? "))
+HogeHoed = str(input("Bent u in bezit van een hoge hoed? "))
+Man = str(input("Bent u een man? "))
+if Man == "ja":
+    Snor = str(input("Heeft u een snor? "))
+    if Snor == "ja": 
+        SnorBreedte = int(input("Hoe breed is uw snor in centimeters? "))
+else:
+     Vrouw = str(input("Bent u een vrouw? "))
+     if Vrouw == "ja":
+         HaarKleur = str(input("Heeft u rood krulhaar? "))
+         if HaarKleur == "ja":
+             HaarLengte = int(input("Hoelang is uw haar in centimeters? "))
+Lengte = float(input("Hoelang bent u in centimeters? "))
+LichaamsGewicht = int(input("Wat is uw lichaamsgewicht in hele kilo's? "))
+Certificaat = str(input("Heeft u een certificaat voor overleven met gevaarlijk personeel? "))
+Fietsen = str(input("Kunt u fietsen? "))
+Skelter = str(input("Heeft u wel eens op een skelter gereden? "))
+Zandbak = str(input("Heeft u thuis een zandbak? "))
+BalletjesPistool = str(input("Heeft u wel eens met een balletjespistool geschoten? "))
+
+gezakt = 'Helaas u bent niet in aanmerking gekomen voor de sollicitatie'
+
+if PraktijkErvaring > 4:
+    if MboDilpoma == "ja":
+        if VrachtwagenBewijs == "ja":
+            if HogeHoed == "ja":
+                if Lengte > 150:
+                    if LichaamsGewicht > 90:
+                        if Certificaat == "ja":
+                            if Man == "ja":
+                                if Snor == "ja":
+                                    if SnorBreedte > 10:
+                                        print ("Gefeliciteerd U mag solliciteren")
+                            elif Vrouw == "ja":
+                                if HaarKleur == "ja":
+                                    if HaarLengte > 20:
+                                        print ("Gefeliciteerd U mag solliciteren")                                        
+                                    else:
+                                        print (gezakt)
+                                else:
+                                    print (gezakt)
+                            else:
+                                print (gezakt)
+                        else:
+                            print (gezakt)
+                    else:
+                        print (gezakt)
+                else:
+                    print (gezakt)
+            else:
+                print (gezakt)
+        else:
+            print (gezakt)
+    else:
+        print (gezakt)
+else:
+    print (gezakt)                      
