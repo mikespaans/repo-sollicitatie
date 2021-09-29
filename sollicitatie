@@ -6,7 +6,7 @@ Man = str(input("Bent u een man? "))
 if Man == "ja":
     Snor = str(input("Heeft u een snor? "))
     if Snor == "ja": 
-        SnorBreedte = int(input("Hoe breed is uw snor in centimeters? "))
+        SnorBreedte = int(input("Hoe breed is uw snor? "))
 else:
      Vrouw = str(input("Bent u een vrouw? "))
      if Vrouw == "ja":
@@ -57,4 +57,5 @@ if PraktijkErvaring > 4:
     else:
         print (gezakt)
 else:
-    print (gezakt)                      
+    print (gezakt) 
+                     
